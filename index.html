@@ -1,0 +1,63 @@
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
+<script src="rena.me.min.js"></script>
+
+<br>
+
+<div>
+  <input class="rena-me" data-rename-mask="getCardLike"></input>
+  <script>
+    var cntrl = new RenaME({input: $('.rena-me')});
+  </script>
+</div>
+
+<div>
+  <input class="rena-me-with-label" data-rename-label=".rena-me-label"></input>
+  <label class="rena-me-label" data-rename-mask="getCardLike"></label>
+  <script>
+    var cntrl = new RenaME({input: $('.rena-me-with-label')});
+  </script>
+</div>
+
+
+<script>
+  // capitalize
+  var a = new RenaME('juquinha da silva lopes')
+  console.group('capitalize')
+  console.log('>', a.toString())
+  console.log('>', a.capitalize().toString())
+  console.groupEnd('capitalize')
+
+  // getCardLike
+  var b = new RenaME('juquinha da silva lopes')
+  console.group('getCardLike')
+  console.log('>', b.toString())
+  console.log('>', b.getCardLike().toString())
+  console.log('>', b.getCardLike({dot: true}).toString())
+  console.groupEnd('getCardLike')
+
+  // getFirstName
+  var c = new RenaME('juquinha da silva lopes')
+  console.group('getFirstName')
+  console.log('>', c.toString())
+  console.log('>', c.getFirstName().toString())
+  console.log('>', c.getFirstName().capitalize().toString(), '- capitalize')
+  console.groupEnd('getFirstName')
+  
+
+  // getMiddleName
+  var d = new RenaME('juquinha da silva lopes')
+  console.group('getMiddleName')
+  console.log('>', d.toString())
+  console.log('>', d.getMiddleName().toString())
+  console.log('>', d.getMiddleName().capitalize().toString(), '- capitalize')
+  console.groupEnd('getMiddleName')
+
+  // getLastName
+  var e = new RenaME('juquinha da silva lopes')
+  console.group('getLastName')
+  console.log('>', e.toString())
+  console.log('>', e.getLastName().toString())
+  console.log('>', e.getLastName().capitalize().toString(), '- capitalize')
+  console.groupEnd('getLastName')
+  
+</script>
