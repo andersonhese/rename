@@ -1,15 +1,11 @@
 # RenaME
 
-facilitador de vida quando se trata de nomes.
-Formate nomes de forma fácil e eficiênte com essa lib 
-
 ### Prerequisites
 
 Jquery >= 2.2.4
 
 ### Installing
 
-Na tag HEAD adicione a lib rena.me.js após a declaração do JQuery
 ```html
 <head>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
