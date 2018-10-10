@@ -57,9 +57,26 @@ Na tag HEAD adicione a lib rena.me.js após a declaração do JQuery
 
 ##### Input > Real-Time Capitalize
 ![Screen](item-1.gif)
+```html
+<div>
+  <input class="rena-me" data-rename-mask="getCardLike"></input>
+  <script>
+    var cntrl = new RenaME({input: $('.rena-me')});
+  </script>
+</div>
+```
 
 ##### Input > Real-Time Label Capitalize
 ![Screen](item-2.gif)
+```html
+<div>
+  <input class="rena-me-with-label" data-rename-label=".rena-me-label"></input>
+  <label class="rena-me-label" data-rename-mask="getCardLike"></label>
+  <script>
+    var cntrl = new RenaME({input: $('.rena-me-with-label')});
+  </script>
+</div>
+```
 
 ## Authors
 
