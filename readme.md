@@ -34,21 +34,21 @@ Jquery >= 2.2.4
 ```javascript
  var person_name = new RenaME('juquinha da silva lopes')
  person_name.getFirstName().toString() // output > 'juquinha'
- person_name.getFirstName().capitalize()toString() // output > 'Juquinha'
+ person_name.getFirstName().capitalize().toString() // output > 'Juquinha'
 ```
 
 ##### - getMiddleName
 ```javascript
  var person_name = new RenaME('juquinha da silva lopes')
  person_name.getMiddleName().toString() // output > 'silva'
- person_name.getMiddleName().capitalize()toString() // output > 'Silva'
+ person_name.getMiddleName().capitalize().toString() // output > 'Silva'
 ```
 
 ##### - getLastName
 ```javascript
  var person_name = new RenaME('juquinha da silva lopes')
  person_name.getLastName().toString() // output > 'pereira'
- person_name.getLastName().capitalize()toString() // output > 'Lopes'
+ person_name.getLastName().capitalize().toString() // output > 'Lopes'
 ```
 
 ##### Input > Real-Time Capitalize
